@@ -13,16 +13,39 @@ The main tasks were:
 <img width="599" height="115" alt="image" src="https://github.com/user-attachments/assets/c21a9701-3f71-442f-906b-83cf254d67ee" />
 <img width="897" height="72" alt="image" src="https://github.com/user-attachments/assets/0ff35b47-e44d-453b-87e5-c7a3dfae176b" />
 <img width="898" height="317" alt="image" src="https://github.com/user-attachments/assets/a469dbed-4e7b-4b7b-affe-4e68b7956fb1" />
+Commands used:
 
-
+```bash
+sudo apt update
+sudo apt install
+ openssh-server -y
+sudo systemctl enable ssh
+sudo systemctl status ssh
 
 
 
 ## 3. Non-root Administrative User
+<img width="1062" height="397" alt="image" src="https://github.com/user-attachments/assets/4e99387e-1810-41d0-a277-086269e2d70e" />
+Commands used:
 
-*(We will paste commands + short explanation here)*
+```bash
+sudo adduser adminarina
+sudo usermod -aG sudo adminarina
+id adminarina
+
 
 ## 4. Firewall Configuration (`ufw`)
+<img width="902" height="783" alt="image" src="https://github.com/user-attachments/assets/2dd981ed-dfbe-435b-af01-3e8db5124efb" />
+
+Commands:
+
+```bash
+sudo apt install ufw -y
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status verbose
 
 *(We will paste the rules + `ufw status` output + 1 screenshot here)*
 

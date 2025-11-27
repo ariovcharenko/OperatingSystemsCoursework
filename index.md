@@ -11,7 +11,7 @@ This site documents my weekly progress across all 7 phases of the assignment.
 ## Contents
 
 - [Week 1 – System Planning and Distribution Selection](week1.md)
-- Week 2 – Security Planning and Testing Methodology (coming soon)
+- Week 2 – Security Planning and Testing Methodology (week2.md)
 - Week 3 – Application Selection for Performance Testing (coming soon)
 - Week 4 – Initial System Configuration & Security Implementation (coming soon)
 - Week 5 – Advanced Security and Monitoring Infrastructure (coming soon)

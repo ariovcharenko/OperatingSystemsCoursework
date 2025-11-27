@@ -53,12 +53,47 @@ sudo ufw status verbose
 
 ## 5. Remote Administration Evidence (SSH from Workstation)
 
-*(We will add the SSH command + 1 screenshot here)*
+SSH command used:
+
+```bash
+ssh adminarina@192.168.65.3
+```
+<img width="1280" height="666" alt="image" src="https://github.com/user-attachments/assets/7beef605-542a-406b-a0f9-417b1a6de323" />
+
+
 
 ## 6. Configuration File Changes (Before/After)
+### Before Changes (`/etc/ssh/sshd_config`)
+```text
+#PermitRootLogin prohibit-password
+#PasswordAuthentication yes
+#PubkeyAuthentication yes
+#ChallengeResponseAuthentication no
+#UsePAM yes
+```
 
-*(We’ll add small snippets from `sshd_config` once we edit it)*
+After Changes (Hardened Configuration)
+```text
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+ChallengeResponseAuthentication no
+UsePAM yes
+AllowUsers dminarina
+```
+Explanation of Changes
+PermitRootLogin no → disables direct login as root, reducing attack surface.
+PasswordAuthentication no → enforces key-based authentication (stronger, not brute-forceable).
+AllowUsers dminarina → restricts SSH access to only the new admin user.
+PubkeyAuthentication yes → ensures SSH keys are required for login.
+UsePAM yes → keeps Pluggable Authentication Module active for session management.
+
 
 ## 7. Reflection for Week 4
 
-*(We’ll write 1 short paragraph at the end)*
+This week focused on establishing secure remote administration for my Linux server. I installed and configured the SSH service, enabled the firewall, and added a dedicated non-root administrator account to improve security. One of the key lessons was understanding how different network modes affect IP addressing in virtual machines, since I had to identify the correct server IP before connecting from the workstation.
+
+I also verified service status using systemd tools and ensured SSH was enabled and persistent across reboots. Another important skill was troubleshooting connection issues such as “connection refused” and “broken pipe,” which helped me understand how authentication, user accounts, and service configuration interact. Finally, I reviewed the SSH configuration file and documented how a hardened version improves security by disabling root login, controlling authentication methods, and allowing only specific users to connect.
+
+Overall, this week strengthened my ability to manage remote access securely and improved my confidence working with Linux services, firewall rules, and network diagnostics.
+

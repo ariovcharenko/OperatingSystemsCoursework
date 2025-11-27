@@ -21,6 +21,7 @@ sudo apt install
  openssh-server -y
 sudo systemctl enable ssh
 sudo systemctl status ssh
+```
 
 
 
@@ -32,6 +33,7 @@ Commands used:
 sudo adduser adminarina
 sudo usermod -aG sudo adminarina
 id adminarina
+```
 
 
 ## 4. Firewall Configuration (`ufw`)
@@ -46,8 +48,8 @@ sudo ufw default allow outgoing
 sudo ufw allow ssh
 sudo ufw enable
 sudo ufw status verbose
+```
 
-*(We will paste the rules + `ufw status` output + 1 screenshot here)*
 
 ## 5. Remote Administration Evidence (SSH from Workstation)
 

@@ -304,6 +304,9 @@ ls ~/server-monitor-logs
 cat ~/server-monitor-logs/monitor-<timestamp>.txt
 ```
 
+
+<img width="986" height="281" alt="image" src="https://github.com/user-attachments/assets/2da33f7b-5ed5-474d-93da-0e5fe7d537d6" />
+
 <img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/ced736c4-0953-45e5-b4d3-fb793704c86a" />
 
 

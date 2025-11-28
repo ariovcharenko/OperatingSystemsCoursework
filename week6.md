@@ -85,7 +85,8 @@ Include four graphs:
 * Disk I/O comparison
 * Network throughput comparison
 
-> **📸 INSERT SCREENSHOT 5 — CPU chart**
+<img width="895" height="412" alt="image" src="https://github.com/user-attachments/assets/90d69eca-234d-401f-a0c4-06708b9490b9" />
+
 > **📸 INSERT SCREENSHOT 6 — Memory chart**
 > **📸 INSERT SCREENSHOT 7 — Disk I/O chart**
 > **📸 INSERT SCREENSHOT 8 — Network chart**

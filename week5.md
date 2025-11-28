@@ -1,4 +1,4 @@
-<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/586d93e1-ba3e-4bb0-af72-ee45ddbb6eed" /># Week 5 – Advanced Security & Monitoring Infrastructure
+# Week 5 – Advanced Security & Monitoring Infrastructure
 
 This week I implemented advanced security controls and monitoring capabilities on my Ubuntu Server. Building on the SSH hardening and firewall configuration from Week 4, I:
 

@@ -138,7 +138,8 @@ Command:
 dd if=/dev/zero of=testfile bs=1G count=1 oflag=direct
 ```
 
-> **📸 INSERT SCREENSHOT 13 — `dd` write results**
+<img width="1246" height="160" alt="image" src="https://github.com/user-attachments/assets/67ccc902-6faf-4dc0-9d16-2f016bd98510" />
+
 
 ---
 
@@ -156,7 +157,7 @@ Client:
 iperf3 -c <server-ip>
 ```
 
-> **📸 INSERT SCREENSHOT 14 — iperf3 server mode**
+
 > **📸 INSERT SCREENSHOT 15 — iperf3 client results**
 
 ---

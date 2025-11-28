@@ -53,7 +53,8 @@ iostat
 ping -c 4 <server-ip>
 ```
 
-> **📸 INSERT SCREENSHOT 2 — baseline CPU/memory (`top`)**
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/733ceca3-760b-4223-a3d8-7bb14863a430" />
+
 > **📸 INSERT SCREENSHOT 3 — baseline disk I/O (`iostat`)**
 > **📸 INSERT SCREENSHOT 4 — baseline ping latency**
 

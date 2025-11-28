@@ -290,7 +290,8 @@ Make executable:
 chmod +x ~/monitor-server.sh
 ```
 
-<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/373a405b-d887-49f9-abf0-59999a4665f6" />
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/fd92a814-068d-4a8f-b5ad-20807d45d1be" />
+
 
 <img width="887" height="74" alt="image" src="https://github.com/user-attachments/assets/ae5da3b6-7a19-4a77-8b1d-df2aa99fa45c" />
 

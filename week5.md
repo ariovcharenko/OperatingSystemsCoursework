@@ -1,4 +1,4 @@
-# Week 5 – Advanced Security & Monitoring Infrastructure
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/586d93e1-ba3e-4bb0-af72-ee45ddbb6eed" /># Week 5 – Advanced Security & Monitoring Infrastructure
 
 This week I implemented advanced security controls and monitoring capabilities on my Ubuntu Server. Building on the SSH hardening and firewall configuration from Week 4, I:
 
@@ -219,8 +219,10 @@ Make it executable:
 sudo chmod +x /usr/local/bin/security-baseline.sh
 ```
 
+<img width="1280" height="823" alt="image" src="https://github.com/user-attachments/assets/1cb02706-5bb0-4cd0-871d-291e19b57430" />
+<img width="1218" height="426" alt="image" src="https://github.com/user-attachments/assets/2b35573f-3573-432a-a652-634154d72dfc" />
 
-(*Screenshot: ls -l showing executable bit*)
+
 
 ### 5.4.2 Running the script from the workstation
 

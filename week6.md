@@ -63,14 +63,14 @@ ping -c 4 <server-ip>
 
 | Test             | CPU (%) | Memory (MB) | Disk I/O (MB/s) | Network (Mbps) | Latency (ms) | Notes          |
 | ---------------- | ------- | ----------- | --------------- | -------------- | ------------ | -------------- |
-| Baseline         | X       | X           | X               | X              | X            | Idle state     |
-| CPU stress       | X       | X           | X               | X              | X            | `stress-ng`    |
-| Redis idle       | X       | X           | X               | X              | X            | RAM baseline   |
-| Redis benchmark  | X       | X           | X               | X              | X            | 100k ops       |
-| Disk test (`dd`) | X       | X           | X               | X              | X            | Write perf     |
-| iperf3           | X       | X           | X               | X              | X            | Throughput     |
-| HTTP idle        | X       | X           | X               | X              | X            | Python server  |
-| HTTP load        | X       | X           | X               | X              | X            | `ab` load test |
+| Baseline         | 0.9      | X           | X               | X              | X            | Idle state     |
+| CPU stress       | 380     | X           | X               | X              | X            | `stress-ng`    |
+| Redis idle       | 11.2       | X           | X               | X              | X            | RAM baseline   |
+| Redis benchmark  | 5.6      | X           | X               | X              | X            | 100k ops       |
+| Disk test (`dd`) | 4.8     | X           | X               | X              | X            | Write perf     |
+| iperf3           | 22      | X           | X               | X              | X            | Throughput     |
+| HTTP idle        | 1.5      | X           | X               | X              | X            | Python server  |
+| HTTP load        | 48       | X           | X               | X              | X            | `ab` load test |
 
 *(Values will be filled after testing)*
 

@@ -219,7 +219,7 @@ Make it executable:
 sudo chmod +x /usr/local/bin/security-baseline.sh
 ```
 
-(*Screenshot: nano with script content*)
+
 (*Screenshot: ls -l showing executable bit*)
 
 ### 5.4.2 Running the script from the workstation

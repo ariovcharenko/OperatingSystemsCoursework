@@ -232,7 +232,8 @@ sudo chmod +x /usr/local/bin/security-baseline.sh
 ssh <your_user>@<your_server_ip> 'sudo /usr/local/bin/security-baseline.sh'
 ```
 
-(*Screenshot: full script output*)
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/8b49a614-a581-4ddc-8663-3e39fc388473" />
+
 
 ---
 

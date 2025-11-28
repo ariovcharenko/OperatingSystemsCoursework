@@ -158,7 +158,8 @@ iperf3 -c <server-ip>
 ```
 
 
-> **📸 INSERT SCREENSHOT 15 — iperf3 client results**
+<img width="1118" height="547" alt="image" src="https://github.com/user-attachments/assets/e62b8360-4ded-4b9d-bc29-30ef150f131c" />
+
 
 ---
 
@@ -176,8 +177,10 @@ Load test:
 ab -n 5000 -c 100 http://<server-ip>:8080/
 ```
 
-> **📸 INSERT SCREENSHOT 16 — Python HTTP server running**
-> **📸 INSERT SCREENSHOT 17 — `ab` benchmark results**
+<img width="1103" height="114" alt="image" src="https://github.com/user-attachments/assets/6249bcae-50f9-48d1-b260-89d70aae4782" />
+
+<img width="1065" height="422" alt="image" src="https://github.com/user-attachments/assets/40410a90-987e-4216-9d25-7f929c3cbd42" />
+
 
 ---
 
@@ -189,11 +192,12 @@ ab -n 5000 -c 100 http://<server-ip>:8080/
 ping -c 10 <server-ip>
 ```
 
-> **📸 INSERT SCREENSHOT 18 — ping results**
+<img width="1007" height="405" alt="image" src="https://github.com/user-attachments/assets/7f21ec93-331a-4a58-897d-1027c29874e8" />
+
 
 ### **Throughput (iperf3)**
 
-> **📸 INSERT SCREENSHOT 19 — throughput summary**
+<img width="1092" height="503" alt="image" src="https://github.com/user-attachments/assets/c705f9af-f6b6-4466-a187-748d8831c60e" />
 
 ---
 
@@ -205,8 +209,10 @@ ping -c 10 <server-ip>
 | Disk      | Low write throughput        | dd results       |
 | Network   | Virtual NIC ceiling         | iperf results    |
 
-> **📸 INSERT SCREENSHOT 20 — CPU saturation**
-> **📸 INSERT SCREENSHOT 21 — Disk bottleneck**
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/ebc37dba-a6a5-43d4-a799-9e6197372a15" />
+
+<img width="822" height="193" alt="image" src="https://github.com/user-attachments/assets/0e9d6fa8-2f4f-4e2b-836b-1a5a66cf54f3" />
+
 
 ---
 
@@ -221,7 +227,8 @@ sudo cpupower frequency-set -g performance
 > Result: higher sustained CPU frequency
 > ~15–25% improvement in stress-ng throughput
 
-> **📸 INSERT SCREENSHOT 22 — cpupower output**
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/acf6d7a2-22e4-41c3-aec3-c1448737e60c" />
+
 > **📸 INSERT SCREENSHOT 23 — improved CPU results**
 
 ---

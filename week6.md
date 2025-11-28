@@ -1,4 +1,4 @@
-<img width="2048" height="1331" alt="image" src="https://github.com/user-attachments/assets/bdbd8f56-8161-459c-8d5d-33b3a27cfa37" /># **Week 6 – Performance Evaluation & Analysis**
+# **Week 6 – Performance Evaluation & Analysis**
 
 This week I performed detailed performance testing on all selected applications to understand operating system behaviour under different workloads. I measured CPU usage, memory usage, disk I/O, network throughput, latency, and service response times. I also identified performance bottlenecks and implemented performance optimisations.
 
@@ -123,8 +123,10 @@ Benchmark:
 redis-benchmark -n 100000 -q
 ```
 
-> **📸 INSERT SCREENSHOT 11 — Redis server running**
-> **📸 INSERT SCREENSHOT 12 — redis-benchmark results**
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/155af35b-599f-49bf-bb57-002d88e065c6" />
+
+<img width="1023" height="480" alt="image" src="https://github.com/user-attachments/assets/8856d299-f7e8-4b6f-a56d-f45bdd4571d6" />
+
 
 ---
 

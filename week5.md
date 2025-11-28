@@ -221,6 +221,8 @@ sudo chmod +x /usr/local/bin/security-baseline.sh
 
 <img width="1280" height="823" alt="image" src="https://github.com/user-attachments/assets/1cb02706-5bb0-4cd0-871d-291e19b57430" />
 <img width="1218" height="426" alt="image" src="https://github.com/user-attachments/assets/2b35573f-3573-432a-a652-634154d72dfc" />
+<img width="1215" height="475" alt="image" src="https://github.com/user-attachments/assets/d4d3366b-8c68-4dce-8101-e529d2b3276d" />
+
 
 
 

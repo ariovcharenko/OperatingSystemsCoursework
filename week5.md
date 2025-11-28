@@ -290,8 +290,10 @@ Make executable:
 chmod +x ~/monitor-server.sh
 ```
 
-(*Screenshot: nano with script*)
-(*Screenshot: ls -l showing executable bit*)
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/373a405b-d887-49f9-abf0-59999a4665f6" />
+
+<img width="887" height="74" alt="image" src="https://github.com/user-attachments/assets/ae5da3b6-7a19-4a77-8b1d-df2aa99fa45c" />
+
 
 ### 5.5.2 Running the script
 

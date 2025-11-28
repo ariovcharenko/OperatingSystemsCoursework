@@ -55,8 +55,7 @@ ping -c 4 <server-ip>
 
 <img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/733ceca3-760b-4223-a3d8-7bb14863a430" />
 <img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/fc2fac2f-da08-4b36-b73f-14d384879717" />
-
-
+<img width="885" height="413" alt="image" src="https://github.com/user-attachments/assets/24478e72-5b8c-4b54-8a5b-db73594442d1" />
 
 ---
 

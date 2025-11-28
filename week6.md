@@ -63,14 +63,14 @@ ping -c 4 <server-ip>
 
 | Test             | CPU (%) | Memory (MB) | Disk I/O (MB/s) | Network (Mbps) | Latency (ms) | Notes          |
 | ---------------- | ------- | ----------- | --------------- | -------------- | ------------ | -------------- |
-| Baseline         | 0.9      | X           | X               | X              | X            | Idle state     |
-| CPU stress       | 380     | X           | X               | X              | X            | `stress-ng`    |
-| Redis idle       | 11.2       | X           | X               | X              | X            | RAM baseline   |
-| Redis benchmark  | 5.6      | X           | X               | X              | X            | 100k ops       |
-| Disk test (`dd`) | 4.8     | X           | X               | X              | X            | Write perf     |
-| iperf3           | 22      | X           | X               | X              | X            | Throughput     |
-| HTTP idle        | 1.5      | X           | X               | X              | X            | Python server  |
-| HTTP load        | 48       | X           | X               | X              | X            | `ab` load test |
+| Baseline         | 0.9      | ~1342.6           | X               | X              | X            | Idle state     |
+| CPU stress       | 380     | ~1401.9          | X               | X              | X            | `stress-ng`    |
+| Redis idle       | 11.2       | ~965–1010          | X               | X              | X            | RAM baseline   |
+| Redis benchmark  | 5.6      | ~984         | X               | X              | X            | 100k ops       |
+| Disk test (`dd`) | 4.8     | ~1159          | X               | X              | X            | Write perf     |
+| iperf3           | 22      | ~900–950        | X               | X              | X            | Throughput     |
+| HTTP idle        | 1.5      | ~1012       | X               | X              | X            | Python server  |
+| HTTP load        | 48       | ~1381         | X               | X              | X            | `ab` load test |
 
 *(Values will be filled after testing)*
 
@@ -85,9 +85,9 @@ Include four graphs:
 * Disk I/O comparison
 * Network throughput comparison
 
-<img width="895" height="412" alt="image" src="https://github.com/user-attachments/assets/90d69eca-234d-401f-a0c4-06708b9490b9" />
+<img width="579" height="422" alt="image" src="https://github.com/user-attachments/assets/a1384ffd-5ddf-4c5b-b515-5a6983f5f856" />
+<img width="623" height="454" alt="image" src="https://github.com/user-attachments/assets/3899425b-c3ae-4bcb-b0aa-89e6fe8be44d" />
 
-> **📸 INSERT SCREENSHOT 6 — Memory chart**
 > **📸 INSERT SCREENSHOT 7 — Disk I/O chart**
 > **📸 INSERT SCREENSHOT 8 — Network chart**
 

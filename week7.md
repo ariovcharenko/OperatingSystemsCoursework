@@ -64,7 +64,8 @@ sudo ufw logging on
 sudo ufw status verbose
 ```
 
-**📸 INSERT SCREENSHOT 4 — UFW rules and logging status**
+<img width="913" height="290" alt="image" src="https://github.com/user-attachments/assets/3e7191cb-7c2c-48bd-b876-c04cc96c1360" />
+
 
 ---
 
@@ -73,8 +74,8 @@ sudo ufw status verbose
 ```bash
 sudo aa-status
 ```
+<img width="1229" height="667" alt="image" src="https://github.com/user-attachments/assets/30281e25-e053-470b-b509-bfbe2c91e8c1" />
 
-**📸 INSERT SCREENSHOT 5 — AppArmor profiles in enforce mode**
 
 ---
 
@@ -84,7 +85,9 @@ sudo aa-status
 sudo lynis audit system
 ```
 
-**📸 INSERT SCREENSHOT 6 — Lynis improved score after remediation**
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/bfc8a496-b899-4d24-bef6-ba6aa24ac0a0" />
+
+
 
 ---
 

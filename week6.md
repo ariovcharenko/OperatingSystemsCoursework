@@ -61,16 +61,17 @@ ping -c 4 <server-ip>
 
 ## **4. Performance Data Table**
 
-| Test             | CPU (%) | Memory (MB) | Disk I/O (MB/s) | Network (Mbps) | Latency (ms) | Notes          |
-| ---------------- | ------- | ----------- | --------------- | -------------- | ------------ | -------------- |
-| Baseline         | 0.9      | 1342.6           | 0.34               | 0             | X            | Idle state     |
-| CPU stress       | 380     | 1401.9          | 0.00              | 0            | X            | `stress-ng`    |
-| Redis idle       | 11.2       | 965          | 0.00               | 0            | X            | RAM baseline   |
-| Redis benchmark  | 5.6      | 984         | 0.00               | 0           | X            | 100k ops       |
-| Disk test (`dd`) | 4.8     | 1159          | 1400              | 0           | X            | Write perf     |
-| iperf3           | 22      | 900        |0.00               | 5100            | X            | Throughput     |
-| HTTP idle        | 1.5      | 1012       | 0.00            | 0,5          | X            | Python server  |
-| HTTP load        | 48       | 1381         | 0.00            | 70            | X            | `ab` load test |
+| **Test Scenario**        | **CPU Usage (%)** | **Memory Usage (MB)** | **Disk I/O (MB/s)** | **Network Throughput (Mbps)** | **Latency (ms)** | **Description**                                  |
+| ------------------------ | ----------------- | --------------------- | ------------------- | ----------------------------- | ---------------- | ------------------------------------------------ |
+| **Baseline System**      | 0.9%              | 1342.6                | 0.34                | 0                             | 0.42             | Idle system performance baseline.                |
+| **CPU Load (stress-ng)** | 380%              | 1401.9                | 0.00                | 0                             | N/A              | Full CPU saturation using 4 virtual cores.       |
+| **Redis (Idle)**         | 11.2%             | 965                   | 0.00                | 0                             | N/A              | Redis server running without active workload.    |
+| **Redis (Benchmark)**    | 5.6%              | 984                   | 0.00                | 80–120                        | N/A              | High-frequency key-value operations benchmark.   |
+| **Disk Write Test (dd)** | 4.8%              | 1159                  | **4000**            | 0                             | N/A              | Direct I/O sequential write test (1 GB).         |
+| **iperf3 Throughput**    | 22%               | 900                   | 0.00                | **5100**                      | N/A              | Network throughput between client and server.    |
+| **HTTP Server (Idle)**   | 1.5%              | 1012                  | 0.00                | 0.5                           | <1               | Python HTTP server running without load.         |
+| **HTTP Load (ab Test)**  | 48%               | 1381                  | 0.00                | 70                            | 3.4              | High-concurrency HTTP benchmark (5000 requests). |
+
 
 *(Values will be filled after testing)*
 

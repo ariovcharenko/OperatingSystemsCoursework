@@ -101,7 +101,7 @@ nmap <server-ip>
 
 Expected result: only **22/tcp (SSH)** open.
 
-**📸 INSERT SCREENSHOT 7 — nmap scan results from workstation**
+<img width="623" height="344" alt="image" src="https://github.com/user-attachments/assets/d592cdce-0f0c-44b1-b387-9cdf4bad6543" />
 
 ---
 
@@ -113,7 +113,8 @@ List running services:
 systemctl list-units --type=service --state=running
 ```
 
-**📸 INSERT SCREENSHOT 8 — active system services**
+<img width="1222" height="590" alt="image" src="https://github.com/user-attachments/assets/85fe6f55-f9ab-4f8f-a20e-da62fe083810" />
+
 
 All running services were reviewed and categorised:
 

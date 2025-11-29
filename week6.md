@@ -229,7 +229,8 @@ sudo cpupower frequency-set -g performance
 
 <img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/acf6d7a2-22e4-41c3-aec3-c1448737e60c" />
 
-> **📸 INSERT SCREENSHOT 23 — improved CPU results**
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/6b0c8e1b-3c49-42d8-a1e8-e96533e1a094" />
+
 
 ---
 
@@ -242,8 +243,9 @@ echo deadline | sudo tee /sys/block/sda/queue/scheduler
 > Result: lower latency and faster sequential writes
 > ~20–30% improvement in disk performance
 
-> **📸 INSERT SCREENSHOT 24 — scheduler changed**
-> **📸 INSERT SCREENSHOT 25 — improved `dd` results**
+<img width="1259" height="190" alt="image" src="https://github.com/user-attachments/assets/909cd0ca-913f-4872-99e6-79f4cc9e7ee2" />
+<img width="1231" height="153" alt="image" src="https://github.com/user-attachments/assets/a5d1ecdf-9ceb-4d01-815f-6fdbf408f3ff" />
+
 
 ---
 

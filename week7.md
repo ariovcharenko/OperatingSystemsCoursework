@@ -14,7 +14,8 @@ Lynis was used to assess the overall security posture of the server.
 sudo lynis audit system
 ````
 
-**📸 INSERT SCREENSHOT 1 — Lynis baseline scan results (including Hardening Index)**
+<img width="1218" height="363" alt="image" src="https://github.com/user-attachments/assets/806d5d5c-98d0-4ba2-b7db-60982d60aeb3" />
+
 
 ---
 
@@ -29,7 +30,8 @@ sudo apt install unattended-upgrades -y
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
-**📸 INSERT SCREENSHOT 2 — confirmation of unattended-upgrades enabled**
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/d497e333-2aa2-446a-93a3-5e82a018341f" />
+
 
 ---
 
@@ -50,7 +52,8 @@ Verification:
 grep -E "PasswordAuthentication|PermitRootLogin|MaxAuthTries|LoginGraceTime" /etc/ssh/sshd_config
 ```
 
-**📸 INSERT SCREENSHOT 3 — SSH hardening verification output**
+<img width="1227" height="185" alt="image" src="https://github.com/user-attachments/assets/36c2c695-1621-41bc-91a5-5abfda1d054d" />
+
 
 ---
 

@@ -1,4 +1,3 @@
-````markdown
 # **Week 7 – Security Audit & System Evaluation**
 
 This week I performed a full security audit of the server, verifying the effectiveness of all security configurations from previous weeks. The audit included a Lynis security scan, network analysis using `nmap`, access control verification, service inventory review, system configuration validation, and a final risk assessment. All work was completed over SSH from the workstation system.

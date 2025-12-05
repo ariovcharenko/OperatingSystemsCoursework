@@ -102,8 +102,7 @@ Command:
 ```bash
 stress-ng --cpu 4 --timeout 30s
 ```
-
-https://chatgpt.com/backend-api/estuary/content?id=file_000000005e6472088661d30a9537424c&ts=490095&p=fs&cid=1&sig=2b2f4d33baae5f505e94f3166ca8e4e65d1d90e05353f16ba8fc7e96e882d7f8&v=0<img width="2048" height="1331" alt="image" src="https://github.com/user-attachments/assets/d448e459-02ac-4c75-a033-0cf9759813d1" />
+<img width="2048" height="1331" alt="image" src="https://github.com/user-attachments/assets/d448e459-02ac-4c75-a033-0cf9759813d1" />
 
 <img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/5f18013c-2a56-424c-bde6-a901b0209df1" />
 

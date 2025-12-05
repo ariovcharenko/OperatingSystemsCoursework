@@ -23,9 +23,58 @@ sudo systemctl enable ssh
 sudo systemctl status ssh
 ```
 
+## 3. SSH Key-Based Authentication Setup
+
+To enable secure key-based SSH login from my workstation to the server, I created an SSH key pair on the workstation (Ubuntu Desktop VM):
+
+```bash
+ssh-keygen -t ed25519 -C "adminarina@server"
+```
+<img width="1144" height="539" alt="image" src="https://github.com/user-attachments/assets/3e1594a8-04d2-4c14-a750-ef16c277a606" />
+
+This generated the following files on my workstation:
+
+- Private key → `~/.ssh/id_ed25519`
+- Public key → `~/.ssh/id_ed25519.pub`
+
+Next, I configured the server to accept this key using:
+
+```bash
+ssh-copy-id adminarina@192.168.65.3
+```
+
+To verify that key-based authentication was configured correctly, I checked the `authorized_keys` file on the server:
+
+```bash
+ls -l /home/adminarina/.ssh/authorized_keys
+```
+
+After confirming that my SSH key had been successfully installed, I disabled password authentication in the SSH configuration file:
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+I applied the following hardened settings:
+
+```
+PasswordAuthentication no
+PubkeyAuthentication yes
+PermitRootLogin no
+AllowUsers adminarina
+```
+
+Finally, I restarted the SSH service to apply the changes:
+
+```bash
+sudo systemctl restart ssh
+```
+
+This completes the configuration of key-based SSH authentication. From this point onward, SSH access to the server is only permitted using my workstation’s private key, which significantly improves security and meets the Week 4 requirements.
 
 
-## 3. Non-root Administrative User
+
+## 4. Non-root Administrative User
 <img width="1062" height="397" alt="image" src="https://github.com/user-attachments/assets/4e99387e-1810-41d0-a277-086269e2d70e" />
 Commands used:
 
@@ -36,7 +85,7 @@ id adminarina
 ```
 
 
-## 4. Firewall Configuration (`ufw`)
+## 5. Firewall Configuration (`ufw`)
 <img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/2311d9d8-a399-45f4-8a73-c5ad143e53bd" />
 
 
@@ -58,7 +107,7 @@ sudo ufw status verbose
 ```
 
 
-## 5. Remote Administration Evidence (SSH from Workstation)
+## 6. Remote Administration Evidence (SSH from Workstation)
 
 SSH command used:
 
@@ -69,7 +118,7 @@ ssh adminarina@192.168.65.3
 
 
 
-## 6. Configuration File Changes (Before/After)
+## 7. Configuration File Changes (Before/After)
 ### Before Changes (`/etc/ssh/sshd_config`)
 ```text
 #PermitRootLogin prohibit-password
@@ -86,7 +135,7 @@ PasswordAuthentication no
 PubkeyAuthentication yes
 ChallengeResponseAuthentication no
 UsePAM yes
-AllowUsers dminarina
+AllowUsers adminarina
 ```
 Explanation of Changes
 PermitRootLogin no → disables direct login as root, reducing attack surface.
@@ -96,7 +145,7 @@ PubkeyAuthentication yes → ensures SSH keys are required for login.
 UsePAM yes → keeps Pluggable Authentication Module active for session management.
 
 
-## 7. Reflection for Week 4
+## 8. Reflection for Week 4
 
 This week focused on establishing secure remote administration for my Linux server. I installed and configured the SSH service, enabled the firewall, and added a dedicated non-root administrator account to improve security. One of the key lessons was understanding how different network modes affect IP addressing in virtual machines, since I had to identify the correct server IP before connecting from the workstation.
 

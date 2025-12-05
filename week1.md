@@ -23,13 +23,10 @@ Includes built-in Terminal — works perfectly as the SSH client
 Recommended by the module for students who prefer a Linux GUI for administrative tasks
 This matches the module requirement for a separate workstation system used only to remotely administer the server.
 
-## 4. Network Configuration (VirtualBox)
-I used UTM’s default NAT networking for both VMs.
-This allows:
-Internet access for updates
-Internal connectivity between VMs
-SSH access from the workstation to the server
-No port forwarding was required at this stage — SSH configuration will be completed in Week 2.
+## 4. Network Configuration:
+Both VMs are connected using UTM’s Shared Network (NAT) interface.  
+The server obtained IP 192.168.65.X, and the workstation obtained 192.168.65.Y.  
+This allows SSH connectivity while keeping the VMs isolated from the host network.
 
 ## 5. System Information Commands and Evidence
 Below is the required system information gathered from the server using the commands:

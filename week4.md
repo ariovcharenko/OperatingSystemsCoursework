@@ -18,7 +18,7 @@ Commands used:
 ```bash
 sudo apt update
 sudo apt install
- openssh-server -y
+openssh-server -y
 sudo systemctl enable ssh
 sudo systemctl status ssh
 ```
@@ -37,7 +37,8 @@ id adminarina
 
 
 ## 4. Firewall Configuration (`ufw`)
-<img width="902" height="783" alt="image" src="https://github.com/user-attachments/assets/2dd981ed-dfbe-435b-af01-3e8db5124efb" />
+<img width="1280" height="832" alt="image" src="https://github.com/user-attachments/assets/2311d9d8-a399-45f4-8a73-c5ad143e53bd" />
+
 
 Commands:
 
@@ -45,7 +46,13 @@ Commands:
 sudo apt install ufw -y
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo ufw allow ssh
+
+# Remove overly-broad SSH rule if it already exists
+sudo ufw delete allow ssh 2>/dev/null
+
+# Allow SSH ONLY from workstation IP
+sudo ufw allow from 192.168.65.4 to any port 22 proto tcp
+
 sudo ufw enable
 sudo ufw status verbose
 ```

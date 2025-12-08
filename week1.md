@@ -25,7 +25,7 @@ This matches the module requirement for a separate workstation system used only 
 
 ## 4. Network Configuration:
 Both VMs are connected using UTM’s Shared Network (NAT) interface.  
-The server obtained IP 192.168.65.X, and the workstation obtained 192.168.65.Y.  
+The server obtained IP 192.168.67.2, and the workstation obtained 192.168.67.3.  
 This allows SSH connectivity while keeping the VMs isolated from the host network.
 
 ## 5. System Information Commands and Evidence
